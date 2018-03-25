@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+table, th, td {
+    border: 2px solid black;
+}
+</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Speaker Transisition Detection</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicons
+    ================================================== -->
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- Navigation
+    ==========================================-->
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="index.html">Transition Detection</a> </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home" class="page-scroll">Home</a></li>
+        <li><a href="#about-section" class="page-scroll">Introduction</a></li>
+        <li><a href="#services-section" class="page-scroll">Proposed Approach</a></li>
+        <li><a href="#works-section" class="page-scroll">Experiments and Results</a></li>
+        <li><a href="#contact-section" class="page-scroll">Conclusion</a></li>
+        <li><a href="#team-section" class="page-scroll">Team Members</a></li>
+        
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+
+<!-- Header -->
+<header class="text-center" name="home">
+  <div class="intro-text">
+    <h1> <span class="color">Speaker Transition Detection</span></h1>
+    <p>using Radon and Discrete Cosine Transforms based features from Speech Spectrogram </p>
+    <div class="clearfix"></div>
+    <a href="#about-section" class="btn btn-default btn-lg page-scroll">Learn More</a> </div>
+</header>
+<!-- About Section -->
+<div id="about-section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Introduction</h2>
+      <hr>
+    </div>
+    <div class="row">
+      
+        <h4><strong>Introduction to Problem</strong></h4>
+        <p>Speaker recognition is to recognize persons from their voice. No two individuals sound identical because their vocal tract shapes, larynx sizes, other parts of their voice production organs, manner of speaking including the use of a particular accent, rhythm, in tonation style, pronunciation pattern and choice of vocabulary are different. State-of-the-art speaker recognition systems use number of these features in parallel, attempting to cover different aspects and employing them in complementary ways to achieve more accurate recognition.</p>
+      
+      <h4> <strong>Figure</strong> </h4>
+      <p>A sample <B> (a) Spectrogram </B> and its <B> (b) Radon Transform </B> in one chosen direction.</p>
+						<p><img src="https://github.com/anand374/Automatic-Speech-Sequence-Segmentation/blob/master/Pictures/Spectrogram.JPG?raw=true" alt="Spectrogram and Radon Transform" width="500px" height=""/></p>
+        <h4> <strong>Literature Review</strong></h4>
+        <p><strong>Pawan K Ajmera, Dattatray V. Jadhav, Raghunath S. Holambe, "Text-Independent Speaker Identification using Radon and Discrete Cosine Transforms based features from Speech Spectrogram"</strong><br>
+		This paper presents a new feature extraction technique for speaker recognition using Radon transform (RT) and discrete cosine transform (DCT). The spectrogram is compact, efficient in representation and carries information about acoustic features in the form of pattern. In the proposed method, speaker specific features have been extracted by applying image processing techniques to the pattern available in the spectrogram. </p>
+      
+      
+        <h4><strong>Proposed Approach</strong></h4>
+        <p>It has been established that the phonetic information can be recovered by examining the spectrogram in a visual domain rather than the conventional audio domain. Visual domain working is better because it is easier to verbalize speech spectrogram process than to verbalize hearing process.
+		We present a computationally efficient text-independent speaker recognition technique. The essence of this technique lies in formulating the speaker recognition problem in to pattern recognition of images and resolving it using machine learning tools. The technique computes the Radon projections of the speech spectrogram in different directions to derive the speaker's voice pattern. Discrete cosine transform (DCT) of Radon projection reduces the feature vector dimension to derive effective and efficient speaker.
+		Block Diagram representing the process flow.
+		</p>
+		<p><img src="https://github.com/anand374/Automatic-Speech-Sequence-Segmentation/blob/master/Pictures/Block%20Diagram.JPG?raw=true" alt=" width="" height="500px" align="middle" /></p>
+
+      
+    </div>
+  </div>
+</div>
+<!-- Services Section -->
+<div id="services-section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Proposed Approach</h2>
+      <h4> Voice Activity Detection</h4>
+      <p>This is the pre-filter applied for all signals. There are two methods:</p>
+<p>1.Energy Based Method: Filters out intervals with relatively low energy but is sensitive to noise.</p>
+<p>2.Long-Term Spectral Divergence: Compare long term spectral envelope with noise spectrum. This is more Robust to noise.</p> 
+
+
+      <h4> Speech Spectogram</h4>
+      <p>It is well known that the speech signal is non-stationary
+	in nature. However, it is assumed that the speech signal
+remains stationary over a short duration of 20–30 ms. Hence, the
+pre-emphasized signal is segmented into M frames of 20 ms
+duration with a 10 ms overlap between two consecutive frames to
+retain a good quality of the signal and to avoid loss of information</p>
+<p>Windowing is carried out to reduce the edge effects at the
+beginning and the end of the frame. In our study Hamming
+window is multiplied with each frame</p>
+<img src="img/hammingwindow.jpg">
+<p>Fourier transform of each frame is computed to produce an
+estimate of the short-term frequency content of the signal, called
+as spectrogram. The spectrogram is the squared magnitude of the
+time-dependent Fourier transform versus time. N length DFT of a
+windowed frame is computed to obtain the power spectrum as
+below</p>
+<img src= "img/Powespectrum.jpg">
+<p>where Xi(k) is the kth component of DFT of xi(n) (windowed
+frame). Re {.} and Im {.} indicate real and imaginary parts,
+respectively. The spectrums of these frames f(i,k) are concatenated
+to construct the speech spectrogram </p>
+<img src="img/Spectogram.jpg">
+<p>In the proposed approach, the speech spectrogram is treated as
+an image. Contextual variations in speech images are similar to
+real-world changes in scene analysis. These variations can be
+captured by applying image processing techniques to these
+patterns.</p>
+
+<h4> Radon Transform </h4>
+<p> Radon transform is based on the parameterization of lines and
+the evaluation of integrals of an image along these lines. Due to
+inherent properties of Radon transform, it is a useful tool to
+capture the directional features of an image. Basically, the Radon
+transform adds up the pixel intensity values in the given image
+(spectrogram) or time frequency distribution along a straight line
+in a particular direction at a specific displacement</p>
+<img src="img/Radon.png">
+<p> The spectrogram represents acoustic features like energy,
+pitch, fundamental frequency, formants and time in the form of
+a pattern.The Radon transform effectively captures
+these features in the pattern by projecting it onto different
+orientation slices.</p>
+<p>The Radon projection is obtained by summing
+all the intensity values of those pixels that are within the circle
+surrounding the pattern to be recognized and on the line that is
+perpendicular to the ridge. For a given ridge, every pixel within
+the circle will be projected onto it along the perpendicular direction. This gives a rise to one Radon slice in the Radon
+domain. The proposed technique computes Radon projections of
+the spectrogram in different orientations</p>
+<p>edundant
+information by the increased number of Radon projections. Hence in
+the subsequent experiments only seven Radon projections have been
+used [22.5, 45, 67.5, 90, 112.5, 135, 157.5].</p>
+
+<h4> Discrete Cosine Transform</h4>
+<p>DCT is a well-known signal analysis tool used in data compression due to its compact representation capability. It has an
+excellent energy compaction property for highly correlated data.
+This helps in reduction of the feature vector dimension.</p>
+<img src="img/DCT.jpg">
+<p> There is a significant improvement in the recognition rate as the
+use of DCT coefficients increases up to 30%. Any further increase
+in the coefficients does not improve the performance significantly. Hence we have selected 30% coefficients of DCT as
+significant coefficients in all the recognition. This happens because most of the information lies in the lower spectrum. </p>
+    </div>
+    <div class="row">
+    <h4> 
+      
+    </div>
+  </div>
+</div>
+<!-- Portfolio Section -->
+<div id="works-section">
+  <div class="container"> <!-- Container -->
+    <div class="section-title">
+      <h2>Experiments and Results</h2>
+      <hr>
+    </div>
+    <div class="row">
+    <h4> <strong>Dataset Description </strong> </h4>
+    <p> As we did not find any good dataset we created our own dataset from youtube videos.</p>
+     <a href="https://drive.google.com/drive/folders/1yLMBpAata_gxS95SO6o5jFHXOZ43Iq8M">Link for the dataset</a>
+
+     <h4> <strong> Code</strong></h4>
+     <a href="https://github.com/rahulkmr75/speech_segmentation">Link for the code</a>
+
+    <p><h4> <strong>Discussion</strong></h4></p>
+    <p><strong>Why Spectogram?</strong></p>
+<p> 1. In speaker identification system, high dimension feature set is preferred to enhance the performance. However, increased feature dimension requires more computational time and storage space. The classifier using high dimension feature set also requires more parameters to characterize a speaker model, e.g. Gaussian Mixture Model (GMM). This increases computational complexity, making real-time implementation more difficult. Furthermore, a large amount of data is required for the training.</p>
+<p>2.An alternative approach to this is to extract effective and efficient feature vectors.Mel frequency cepstral coefficients (MFCC) and linear prediction cepstral coefficients (LPCC) are the two most common feature extraction techniques in speaker identification. MFCC is generally used because of its robustness in speaker identification. Since the elements of feature vectors are generally correlated, a large number of mixtures with full covariance matrix are necessary to provide good approximation. </p>
+<p>3.The GMM with diagonal covariance matrix is used for both speaker identification and verification because of its computational simplicity.</p>
+<p>4.Contextual variations in speech are better represented using a spectrogram and hence it is widely used as a tool for speech analysis</p>
+<p>5.A spectrogram is a graphical display of the squared magnitude of the time-varying spectral characteristics of speech. It is compact and efficient in representation carrying information about energy, pitch, fundamental frequency,formants and timing. Spectrogram reading techniques have revealed that a speech spectrogram contains rich acoustic features that could be valuable in an automatic speech and speaker recognition system</p> 
+<p>6.The technique we use here formulates the speaker identification problem into pattern recognition of images and resolving it using machine learning tools. The technique uses Radon Projections of speech spectogram in different angles to derieve the speaker's voice pattern. And to get more efficient and effective speaker features we use DCT (Dicrete Cosine Transform). As our dataset was small enough we did not use the DCT in our project.</p>
+
+<strong>Why Radon Transform?</strong>
+<p>1. Radon transform is based on the parameterization of lines and the evaluation of integrals of an image along these lines. Due to inherent properties of Radon transform, it is a useful tool to capture the directional features of an image.</p> <p> 2. Basically, the Radon transform adds up the pixel intensity values in the given image (spectrogram) or time frequency distribution along a straight line in a particular direction at a specific displacement.</p>
+ <p>3. The spectrogram represents acoustic features like energy, pitch, fundamental frequency, formants and time in the form of a pattern.The Radon transform effectively captures these features in the pattern by projecting it onto different orientation slices.</p><p> 
+ 4.The Radon projection is obtained by summing all the intensity values of those pixels that are within the circle surrounding the pattern to be recognized and on the line that is perpendicular to the ridge.Another advantage of using Radon transform in the proposed approach is its insensitivity to additive noise.</p>
+ <img src="/img/Radon Transform.png">
+
+
+<strong>Why Discrete Cosine Transform? </strong>
+<p>1. DCT is an orthogonal transformation that is very widely used in image
+compression and is widely accepted in the multimedia standards. DCT belongs
+to a family of 16 trigonometric transformations</p>
+<p>2.DCT is used in signal and image processing as it has a strong "energy compaction" property for highly correlated data.</p>
+<p>3. Can use FFT like algorithms to compute them in O(nlogn) time.</p>
+   
+ <h4> <strong>Results</strong></h4>
+
+ <p> Voice Activity Detection </p>
+ Energy spectogram of Noise and Speaker parts. We set the threshold in between the energies to filter out the silent/noisy parts.
+ <p><img src="img/vad1.jpg"  width='500' height="500"><img src="img/vad3.jpg" width='500' height= 500></p>
+
+ <p>Speech spectogram before and after applying VAD filter.</p>
+ <img src="img/vad2.jpg" width=500 height="400">
+  
+ <p> Correlation of streaks of Radon Projections</p>
+ <img src="img/radonc.jpg">
+ <p>Correlation Matrix based on Radon Transform</p>
+ <img src="img/matrix.jpg">
+
+ <p> Correlation Matrix on DCT applied on Radon Projections</p>
+ <img src="img/DCTcorrelation.png"><img src="img/DCTcorrelation1.png">
+ <p> The above Images show the correlation coefficient output in a 7X7 output matrix. For interpreting, note that the value of index 0 of first row is 1, since it is the correlation between itself. Similarly the Index 1 of 2nd row has correlation coefficient 1 (log10(1)=0), and so on. The index 1 of 1st row is the correlation between speech segment 1 and segment 2. Note that greater the correlation coefficient greater is the probability that the speaker is same. We can consider a thresh level of log10(0.5) and say that if the coefficient is less than this thresh, then a speaker transition has occured. 
+ <BR> We tested this with our dataset of 7 audio samples. When evaluated, the accuracy was found was found to be less than 50%. 
+<p>
+
+<h3> Comparison with MFCC </h3>
+We also tried using MFCC as features. It's accuracy was found to be around 97%.
+<img src="img/MFCC.png">
+
+<table align=center>
+<caption><b>Accuracy Comparison</b></caption>
+  <tr>
+    <th>MFCC</th>
+    <th>Spectrogram with Radon Transform</th> 
+    <th>Radon Transform with DCT</th>
+  </tr>
+  <tr>
+    <td>97%</td>
+    <td>41%</td> 
+    <td>48%</td>
+  </tr>
+</table>
+
+<!-- Contact Section -->
+<div id="contact-section">
+  <div class="container">
+    <div class="section-title center">
+      <h2> Conclusion</h2>
+      <p> We tried to identify speaker transitions using radon transform and DCT on speech spectogram. The results we got were unsatisfactory although the correlation matrix  of DCT coefficents were more better in distingusihing two speakers than the correlation matrix of only Radon Transform Projections. The accuracy we got in detecting speaker transition was less than 50%. Hence we don't recommend using spectogram for speaker transition or identification tasks. 
+    
+      <h4> Future Extension </h4>
+      <p> 1.The noise robustness can be improved.</p>
+      <p> 2. Furthermore, advance speaker diarization should be able to handle presence of overlapped speech on which the occurrence of overlapping speech almost regularly presents in natural conversation.</p>
+      <h4>Applications </h4>
+      <p> 
+    One of the most important application will be in transcription of conversations. 
+    It can be used to crop the speech of a specific person of interest from a long audio clip which can be used as evidence in criminal cases.</p>
+
+    </div>
+    
+  </div>
+</div>
+<div id="team-section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Team Members</h2>
+      <hr>
+    </div>
+    <div id="row">
+      <div class="col-md-3 col-sm-6 team">
+        <div class="thumbnail"> <img src="img/team/01.jpg" alt="..." class="team-img">
+          <div class="caption">
+            <h3>Abhishek Anand</h3>
+            <p>Roll No: 150102003</p>
+            <p> Branch: ECE</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 team">
+        <div class="thumbnail"> <img src="img/team/02.jpg" alt="..." class="team-img">
+          <div class="caption">
+            <h3>Bharath Rao K N</h3>
+            <p>Roll No: 150102011</p>
+            <p>Branch : ECE </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 team">
+        <div class="thumbnail"> <img src="img/team/03.jpg" alt="..." class="team-img">
+          <div class="caption">
+            <h3>Rahul Kumar</h3>
+            <p>Roll No: 150102054</p>
+            <p>Branch: ECE </p>
+          </div>
+        </div>
+      </div>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+<script type="text/javascript" src="js/contact_me.js"></script> 
+
+<!-- Javascripts
+    ================================================== --> 
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
